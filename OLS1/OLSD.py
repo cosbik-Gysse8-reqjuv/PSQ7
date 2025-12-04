@@ -163,9 +163,9 @@ if __name__ == "__main__":
     #
     # And you want to regress y on x1 and x2.
 
-    csv_path = "data.csv"
-    y_col = "y"
-    x_cols = ["x1", "x2"]
+    csv_path = "OLS1/PS6.csv"
+    y_col = "Y"
+    x_cols = ["Treat"]
 
     X, y = load_csv_as_xy(csv_path, y_col, x_cols, add_intercept=True)
     results = ols(X, y)
